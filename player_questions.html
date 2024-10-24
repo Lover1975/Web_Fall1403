@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="پاسخ به سوالات - سامانه سوال پیچ">
+    <title>پاسخ به سوالات - سامانه سوال پیچ</title>
+    <link rel="stylesheet" href="player_questions.css">
+</head>
+<body>
+    <div class="main-container">
+        <button id="dark-mode-toggle" class="dark-mode-btn">
+            <span id="icon">🌞</span>
+        </button>
+
+        <nav class="menu">
+            <div class="menu-section">
+                <a href="player_profile.html" id="profile-link">پروفایل</a>
+            </div>
+            <div class="menu-section">
+                <a href="player_questions.html" id="category-link">مدیریت سوالات</a>
+            </div>
+            <div class="menu-section">
+                <a href="player_leaderboard.html" id="questions-link">جدول امتیازات</a>
+            </div>
+        </nav>
+
+        <div class="question-box">
+            <h2>پاسخ به سوالات</h2>
+            
+            <div class="select-question-method">
+                <label for="category">انتخاب دسته‌بندی سوال:</label>
+                <select id="category">
+                    <option value="ریاضی">ریاضی</option>
+                    <option value="فیزیک">فیزیک</option>
+                    <option value="شیمی">شیمی</option>
+                </select>
+
+                <button id="category-question-btn" class="btn-primary">دریافت سوال از دسته‌بندی</button>
+                <button id="random-question-btn" class="btn-secondary">دریافت سوال تصادفی</button>
+            </div>
+
+            <div id="random-question-box" class="question-box">
+                <h3>سوال: اینجا سوال تصادفی نمایش داده می‌شود</h3>
+                <div class="options">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="questions-container" id="questions-container">
+            <h2>سوالات پاسخ داده شده</h2>
+            <div class="question-item">
+                <h3>متن سوال: 3+2 چقدر می‌شود؟</h3>
+                <p>گزینه 1: 3</p>
+                <p>گزینه 2: <span style="color:green">5 (پاسخ صحیح)</span></p>
+                <p>گزینه 3: 6</p>
+                <p>گزینه 4: 4</p>
+                <p>دسته‌بندی: ریاضی</p>
+                <p>درجه دشواری: آسان</p>
+            </div>
+
+            <div class="question-item">
+                <h3>متن سوال: جرم زمین چقدر است؟</h3>
+                <p>گزینه 1: 10^24 کیلوگرم</p>
+                <p>گزینه 2: <span style="color:red">6×10^24 کیلوگرم (پاسخ صحیح)</span></p>
+                <p>گزینه 3: 5×10^24 کیلوگرم</p>
+                <p>گزینه 4: 7×10^24 کیلوگرم</p>
+                <p>دسته‌بندی: فیزیک</p>
+                <p>درجه دشواری: سخت</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="player_questions.js"></script>
+</body>
+</html>
