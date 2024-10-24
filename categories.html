@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="مدیریت دسته‌بندی‌ها - سامانه سوال پیچ">
+    <title>مدیریت دسته‌بندی‌ها</title>
+    <link rel="stylesheet" href="categories.css">
+</head>
+<body>
+    <div class="main-container">
+        <nav class="menu">
+            <div class="menu-section">
+                <a href="profile.html" id="profile-link">پروفایل</a>
+            </div>
+            <div class="menu-section">
+                <a href="categories.html" id="category-link">مدیریت دسته‌بندی‌ها</a>
+            </div>
+            <div class="menu-section">
+                <a href="questions.html" id="questions-link">مدیریت سوالات</a>
+            </div>
+        </nav>
+
+        <div class="category-box">
+            <h2>مدیریت دسته‌بندی‌ها</h2>
+
+            <div class="add-category">
+                <input type="text" id="new-category" placeholder="نام دسته جدید">
+                <button id="add-category-btn">افزودن دسته</button>
+            </div>
+
+            <div class="categories-container" id="categories-container">
+                <div class="category-item">
+                    <h3>ریاضی</h3>
+                    <p>تعداد سوالات: 10</p>
+                </div>
+                <div class="category-item">
+                    <h3>فیزیک</h3>
+                    <p>تعداد سوالات: 8</p>
+                </div>
+                <div class="category-item">
+                    <h3>شیمی</h3>
+                    <p>تعداد سوالات: 12</p>
+                </div>
+            </div>
+        </div>
+
+        <button id="dark-mode-toggle" class="dark-mode-btn">
+            <span id="icon">🌞</span>
+        </button>
+    </div>
+
+    <script src="categories.js"></script>
+</body>
+</html>

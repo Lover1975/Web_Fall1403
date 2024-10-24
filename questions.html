@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="مدیریت سوالات - سامانه سوال پیچ">
+    <title>مدیریت سوالات</title>
+    <link rel="stylesheet" href="questions.css">
+</head>
+<body>
+    <div class="main-container">
+        <button id="dark-mode-toggle" class="dark-mode-btn">
+            <span id="icon">🌞</span>
+        </button>
+
+        <nav class="menu">
+            <div class="menu-section">
+                <a href="profile.html" id="profile-link">پروفایل</a>
+            </div>
+            <div class="menu-section">
+                <a href="categories.html" id="category-link">مدیریت دسته‌بندی‌ها</a>
+            </div>
+            <div class="menu-section">
+                <a href="questions.html" id="questions-link">مدیریت سوالات</a>
+            </div>
+        </nav>
+
+        <div class="question-box">
+            <h2>مدیریت سوالات</h2>
+
+            <div class="add-question">
+                <textarea id="question-text" placeholder="متن سوال" rows="3"></textarea>
+                <input type="text" id="option1" placeholder="گزینه 1">
+                <input type="text" id="option2" placeholder="گزینه 2">
+                <input type="text" id="option3" placeholder="گزینه 3">
+                <input type="text" id="option4" placeholder="گزینه 4">
+                
+                <label for="correct-answer">پاسخ صحیح:</label>
+                <select id="correct-answer">
+                    <option value="1">گزینه 1</option>
+                    <option value="2">گزینه 2</option>
+                    <option value="3">گزینه 3</option>
+                    <option value="4">گزینه 4</option>
+                </select>
+
+                <label for="category">دسته‌بندی سوال:</label>
+                <select id="category">
+                    <option value="ریاضی">ریاضی</option>
+                    <option value="فیزیک">فیزیک</option>
+                    <option value="شیمی">شیمی</option>
+                </select>
+
+                <label for="difficulty">درجه دشواری:</label>
+                <select id="difficulty">
+                    <option value="آسان">آسان</option>
+                    <option value="متوسط">متوسط</option>
+                    <option value="سخت">سخت</option>
+                </select>
+
+                <button id="add-question-btn">افزودن سوال</button>
+            </div>
+
+            <div class="questions-container" id="questions-container">
+                <div class="question-item">
+                    <h3>متن سوال: 3+2 چقدر می‌شود؟</h3>
+                    <p>گزینه 1: 3</p>
+                    <p>گزینه 2: <span style="color:green">5 (پاسخ صحیح)</span></p>
+                    <p>گزینه 3: 6</p>
+                    <p>گزینه 4: 4</p>
+                    <p>دسته‌بندی: ریاضی</p>
+                    <p>درجه دشواری: آسان</p>
+                </div>
+
+                <div class="question-item">
+                    <h3>متن سوال: جرم زمین چقدر است؟</h3>
+                    <p>گزینه 1: 10^24 کیلوگرم</p>
+                    <p>گزینه 2: <span style="color:green">6×10^24 کیلوگرم (پاسخ صحیح)</span></p>
+                    <p>گزینه 3: 5×10^24 کیلوگرم</p>
+                    <p>گزینه 4: 7×10^24 کیلوگرم</p>
+                    <p>دسته‌بندی: فیزیک</p>
+                    <p>درجه دشواری: سخت</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="questions.js"></script>
+</body>
+</html>
