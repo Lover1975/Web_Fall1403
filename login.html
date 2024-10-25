@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="صفحه ورود به سامانه سوال پیچ">
+    <title>ورود - سوال پیچ</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="login-box">
+            <h2>ورود به سامانه سوال پیچ</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">نام کاربری:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">رمز عبور:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="input-group">
+                    <label for="role">نقش خود را انتخاب کنید:</label>
+                    <select id="role" name="role" required>
+                        <option value="player">بازیکن</option>
+                        <option value="designer">طراح سوال</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">ورود</button>
+            </form>
+            <div class="signup-link">
+                <p>اکانت ندارید؟ <a href="signup.html">ثبت‌نام کنید</a></p>
+            </div>
+            <button id="dark-mode-toggle" class="dark-mode-btn">
+                <span id="icon">🌞</span>
+            </button>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

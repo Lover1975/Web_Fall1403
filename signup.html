@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="صفحه ثبت‌نام سامانه سوال پیچ">
+    <title>ثبت‌نام - سوال پیچ</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="signup-box">
+            <h2>ثبت‌نام در سامانه سوال پیچ</h2>
+            <form id="signupForm">
+                <div class="input-group">
+                    <label for="email">ایمیل:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="username">نام کاربری:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">رمز عبور:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="input-group">
+                    <label for="confirm-password">تأیید رمز عبور:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <div class="input-group">
+                    <label for="role">نقش خود را انتخاب کنید:</label>
+                    <select id="role" name="role" required>
+                        <option value="player">بازیکن</option>
+                        <option value="designer">طراح سوال</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">ثبت‌نام</button>
+            </form>
+            <div class="login-link">
+                <p>حساب کاربری دارید؟ <a href="login.html">وارد شوید</a></p>
+            </div>
+            
+            <button id="dark-mode-toggle" class="dark-mode-btn">
+                <span id="icon">🌞</span>
+            </button>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>
